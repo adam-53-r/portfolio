@@ -6,8 +6,10 @@ edition = "2024"
 [dependencies]
 console_error_panic_hook = "0.1.7"
 leptos = { version = "0.7.7", features = ["csr"] }
+leptos-use = "0.15.7"
 leptos_meta = "0.7.8"
 leptos_router = "0.7.8"
+markdown = "1.0.0-alpha.23"
 
 
 [[example]]
