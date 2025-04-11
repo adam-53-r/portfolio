@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    :root {
+      --link-color: oklch(0.8 0.182 98.111);;
+      --link-color-hover: oklch(0.7 0.182 98.111);
+    }
+}
+
+
 body {
     background-color: #2c2a41;
     color: hsl(0, 0%, 88%);
@@ -17,22 +25,22 @@ header {
 footer {
     border-color: hsla(0, 0%, 53%, 0.705);
     border-top-width: 0.1rem;
-    @apply mb-[4rem] pt-4;
+    @apply mb-[4rem] pt-4 break-words;
 }
 
 a {
-    color: oklch(90.5% 0.182 98.111);
+    color: var(--link-color);
     svg {
-        stroke: #fcd34d;
+        stroke: var(--link-color);
         width: 16px;
         height: 16px;
         @apply inline relative bottom-1;
     }
 }
 a:hover {
-    color: oklch(79.5% 0.184 86.047);
+    color: var(--link-color-hover);
     svg {
-        stroke: oklch(79.5% 0.184 86.047);
+        stroke: var(--link-color-hover);
     }
 }
 
@@ -53,11 +61,9 @@ a:hover {
     }
 
     a {
-        color: oklch(90.5% 0.182 98.111);
     }
 
     a:hover {
-        color: oklch(79.5% 0.184 86.047);
     }
 
     h1 {

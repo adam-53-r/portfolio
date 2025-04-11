@@ -11,6 +11,6 @@ both personal and for enterprises with multiple technologies.
 For all my work I mainly use the following:
 - Linux for all my server necessities, i've used a lot of distros but nowadays I'm settling down with [NixOS](https://nixos.org/)
 for all its [advantages](https://itsfoss.com/why-use-nixos/).
-- Rust as my main programming language to use as long as it suits the necessities.
-- Nix as my main package manager and tooling thanks to its enormous repository size and flexibility.
-- Mikrotik as my go to network solution for routers, switches and firewalls thanks to its simple but large and extensible configuration.
+- [Rust](https://www.rust-lang.org/) as my main programming language to use as long as it suits the necessities.
+- [Nix](https://nixos.org/) as my main package manager and tooling thanks to its enormous repository size and flexibility.
+- [Mikrotik](https://mikrotik.com/) as my go to network solution for routers, switches and firewalls thanks to its simple but large and extensible configuration.
