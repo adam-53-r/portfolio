@@ -1,3 +1,74 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-color: #2c2a41;
+    color: hsl(0, 0%, 88%);
+    @apply text-base break-words mx-auto w-[45%];
+}
+
+header {
+    border-color: hsla(0, 0%, 53%, 0.705);
+    border-bottom-width: 0.1rem;
+    @apply mt-[3rem] pb-5;
+}
+
+footer {
+    border-color: hsla(0, 0%, 53%, 0.705);
+    border-top-width: 0.1rem;
+    @apply mb-[4rem] pt-4;
+}
+
+a {
+    color: oklch(90.5% 0.182 98.111);
+    svg {
+        stroke: #fcd34d;
+        width: 16px;
+        height: 16px;
+        @apply inline relative bottom-1;
+    }
+}
+a:hover {
+    color: oklch(79.5% 0.184 86.047);
+    svg {
+        stroke: oklch(79.5% 0.184 86.047);
+    }
+}
+
+.md_content {
+    ul {
+        @apply -mt-4;
+        p {
+            @apply my-2;
+        }
+    }
+
+    li::marker {
+        content: "\2022   ";
+    }
+
+    li {
+        margin-left: 1rem;
+    }
+
+    a {
+        color: oklch(90.5% 0.182 98.111);
+    }
+
+    a:hover {
+        color: oklch(79.5% 0.184 86.047);
+    }
+
+    h1 {
+        @apply text-3xl font-semibold mb-2;
+    }
+
+    h2 {
+        @apply text-2xl font-semibold mt-5 mb-1;
+    }
+
+    p {
+        @apply mb-4 mt-3;
+    }
+}

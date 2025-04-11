@@ -29,4 +29,9 @@
     "strings": true
     },
     "css.validate": false,
+    "cSpell.words": [
+        "distros",
+        "leptos",
+        "Mikrotik"
+    ],
 }
