@@ -71,15 +71,15 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
-          # token:
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload dist dir
           path: './dist'
+      
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
       - name: Deploy to GitHub Pages 🚀
         id: deployment
