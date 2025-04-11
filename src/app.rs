@@ -1,4 +1,4 @@
-use leptos::{prelude::*, tachys::view};
+use leptos::prelude::*;
 use leptos_meta::*;
 use leptos_router::{
     components::{Route, Router, Routes},
@@ -119,6 +119,7 @@ fn Blog() -> impl IntoView {
 
 
 #[component]
+#[allow(dead_code)]
 fn Link(link: String, text: String) -> impl IntoView {
 
     view! {

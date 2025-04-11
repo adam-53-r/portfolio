@@ -14,3 +14,9 @@ markdown = "1.0.0-alpha.23"
 
 [[example]]
 name = "main"
+
+
+[profile.release]
+opt-level = 'z'
+lto = true
+codegen-units = 1
