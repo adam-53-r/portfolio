@@ -28,23 +28,10 @@ footer {
     @apply mb-[4rem] pt-4 break-words;
 }
 
-a {
-    color: var(--link-color);
-    svg {
-        stroke: var(--link-color);
-        width: 16px;
-        height: 16px;
-        @apply inline relative bottom-1;
-    }
-}
-a:hover {
-    color: var(--link-color-hover);
-    svg {
-        stroke: var(--link-color-hover);
-    }
-}
 
 .md_content {
+    @apply mt-[1rem] mb-[1rem];    
+    
     ul {
         @apply -mt-4;
         p {
@@ -66,15 +53,36 @@ a:hover {
     a:hover {
     }
 
+    p {
+        @apply mb-4 mt-3;
+    }
+
     h1 {
         @apply text-3xl font-semibold mb-2;
     }
 
     h2 {
-        @apply text-2xl font-semibold mt-5 mb-1;
+        @apply text-2xl font-semibold mt-4 mb-1;
     }
 
-    p {
-        @apply mb-4 mt-3;
+    h3 {
+        @apply text-xl font-semibold mt-1 mb-1;
+    }
+
+}
+
+a {
+    color: var(--link-color);
+    svg {
+        stroke: var(--link-color);
+        width: 16px;
+        height: 16px;
+        @apply inline relative bottom-1;
+    }
+}
+a:hover {
+    color: var(--link-color-hover);
+    svg {
+        stroke: var(--link-color-hover);
     }
 }

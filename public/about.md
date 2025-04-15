@@ -13,4 +13,4 @@ For all my work I mainly use the following:
 for all its [advantages](https://itsfoss.com/why-use-nixos/).
 - [Rust](https://www.rust-lang.org/) as my main programming language to use as long as it suits the necessities.
 - [Nix](https://nixos.org/) as my main package manager and tooling thanks to its enormous repository size and flexibility.
-- [Mikrotik](https://mikrotik.com/) as my go to network solution for routers, switches and firewalls thanks to its simple but large and extensible configuration.
+- [Mikrotik](https://mikrotik.com/) as my go-to network solution for routers, switches and firewalls thanks to its simple but large and extensible configuration.

@@ -1,8 +1,8 @@
 use leptos::prelude::*;
 use leptos_meta::*;
 use leptos_router::{
-    components::{Route, Router, Routes},
     StaticSegment,
+    components::{Route, Router, Routes},
 };
 
 #[component]
@@ -49,7 +49,6 @@ fn Header() -> impl IntoView {
 
 #[component]
 fn Footer() -> impl IntoView {
-
     view! {
         <footer>
             <div class="inline">
@@ -83,45 +82,34 @@ fn Footer() -> impl IntoView {
 
 #[component]
 fn About() -> impl IntoView {
-
     let content = md_to_html(include_str!("../public/about.md"));
 
     view! {
-        <main class="pt-[1rem] pb-[4rem]">
-            <div inner_html=content class="md_content"/>
-        </main>
+        <div inner_html=content class="md_content"/>
     }
 }
 
 #[component]
 fn Cv() -> impl IntoView {
-
     let content = md_to_html(include_str!("../public/cv.md"));
 
-    view! {        
-        <main class="pt-[1rem] pb-[4rem]">
-            <div inner_html=content class="md_content"/>
-        </main>
+    view! {
+        <div inner_html=content class="md_content"/>
     }
 }
 
 #[component]
 fn Blog() -> impl IntoView {
-
     let content = md_to_html(include_str!("../public/blog.md"));
 
-    view! {        
-        <main class="px-20 pt-[1rem] pb-[4rem]">
-            <div inner_html=content class="md_content"/>
-        </main>
+    view! {
+        <div inner_html=content class="md_content"/>
     }
 }
-
 
 #[component]
 #[allow(dead_code)]
 fn Link(link: String, text: String) -> impl IntoView {
-
     view! {
         <a target="_blank" class="" href={link}>
             {text}
